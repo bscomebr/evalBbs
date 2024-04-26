@@ -8,4 +8,12 @@
 	<select id="evallist">
 		SELECT * from evalbbs
 	</select>
+	<select id="evaldetail">
+		SELECT * from evalbbs where bno = #{bno}
+	</select>
+	
+	<insert id="evalinsert">
+		INSERT INTO evalbbs(title,content,writer,regdate) VALUES(#{title},#{content},#{writer},#{regdate})
+	</insert>
+	
   </mapper>

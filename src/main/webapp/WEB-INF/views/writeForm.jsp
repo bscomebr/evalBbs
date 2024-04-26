@@ -17,8 +17,8 @@
             게시물제목 : <input type="text" name="title"><br>
             게시물 내용 : <input type="text" name="content"> <br>
             작성자 : <input type="text" name="writer"><br>
-            작성일자 : <input type="date"><br>
-
+            작성일자 : <input type="text" name="regdate"><br>
+            <input type="submit" value="등록하기">
         </form>
 
     </body>

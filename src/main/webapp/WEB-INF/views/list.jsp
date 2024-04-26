@@ -11,10 +11,11 @@
         </head>
 
         <body>
-            <h1>List Page</h1>
+            <h1>목록보기</h1>
+            <a href="writeForm">글 작성하기</a>
             <hr>
             <c:forEach var="list" items="${list}">
-                ${list.bno} / ${list.title} / ${list.content} / ${list.writer} / ${list.regdate}
+               ${list.bno} / <a href="detail?bno=${list.bno}">${list.title}</a>/ ${list.content} / ${list.writer} / ${list.regdate}<br>
             </c:forEach>
         </body>
 
