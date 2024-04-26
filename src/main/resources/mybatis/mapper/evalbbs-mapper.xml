@@ -15,5 +15,8 @@
 	<insert id="evalinsert">
 		INSERT INTO evalbbs(title,content,writer,regdate) VALUES(#{title},#{content},#{writer},#{regdate})
 	</insert>
+	<delete id="evaldelete">
+		DELETE FROM evalbbs WHERE bno = #{bno}
+	</delete>
 	
   </mapper>

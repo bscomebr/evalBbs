@@ -66,6 +66,13 @@ public class EvalBbsController {
 		dao.evalinsert(title_, content_, writer_, regdate_);
 		return "redirect:list";
 	}
+	@RequestMapping("/delete")
+	public String delete(@RequestParam("bno") String bno) {
+	
+		dao.evaldelete(bno);
+		
+	return "redirect:list";
+	}
 
 	
 	
